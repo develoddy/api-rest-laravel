@@ -22,11 +22,11 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'surname',
+        'nick',
         'role',
-        'description',
         'email',
         'image',
-        'password',
+        'password'
     ];
 
     /**
@@ -49,8 +49,10 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    // Mutadores y Accesores
-    // Transforma letras mayusculas en minuscula antes de insertar en la DB
+    /**
+     * Mutadores y Accesores
+     * Trasforma las letras mayusculas a minusculas antes de insertar en la DB.
+     */
     protected function name(): Attribute 
     {
         return new Attribute(
@@ -59,7 +61,9 @@ class User extends Authenticatable
         );
     }
 
-    // Relación de uno a muchos
+    /**
+     * Consigue las publicaciones asociado al usuario.
+     */
     public function posts() {
         return $this->hasMany(Post::class);
     }
