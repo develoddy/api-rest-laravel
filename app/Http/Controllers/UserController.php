@@ -29,6 +29,9 @@ class UserController extends Controller
      * @param $request
      */
     public function register( Request $request ) {
+
+        //echo "User.Register.php";
+        //dd($request);die();
         
         // Recoger los datos del usuario por post
         $validator = Validator::make( $request->all(), [
