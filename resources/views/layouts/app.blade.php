@@ -7,7 +7,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+<<<<<<< HEAD
     <title>{{ config('app.name', 'Laravel') }}</title>
+=======
+    <title>@yield('title', config('app.name', 'Laravel'))</title>
+>>>>>>> main
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -30,7 +34,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+<<<<<<< HEAD
 
+=======
+                        
+>>>>>>> main
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -49,12 +57,27 @@
                                 </li>
                             @endif
                         @else
+<<<<<<< HEAD
+=======
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Explorar') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
+                            </li>
+>>>>>>> main
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
+=======
+                                    <a class="dropdown-item" href="{{ route('profile') }}">
+                                        {{ __('Perfil') }}
+                                    </a>
+>>>>>>> main
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

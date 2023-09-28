@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+<<<<<<< HEAD
+=======
+@section('title', 'Home')
+
+>>>>>>> main
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -7,6 +12,11 @@
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
+<<<<<<< HEAD
+=======
+                {{-- Bienvenida@: {{ $name ?? "invitado" }} --}}
+
+>>>>>>> main
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">

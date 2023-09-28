@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         return view('home');
+=======
+        $name = 'Eddy';
+        return view('home', compact('name') );
+>>>>>>> main
     }
 }
