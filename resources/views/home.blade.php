@@ -16,7 +16,7 @@
                     {{ __('You are logged in!') }}
                 </div>
                 <div class="card-body">
-                    @include('web.stories.stories')
+                    @include('web.stories.stories-home')
                 </div>
             </div>
         </div>
