@@ -27,4 +27,4 @@ Route::get('/explore', [ExploreController::class, 'index'])->name('explore');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
