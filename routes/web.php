@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ExploreController;
+use App\Http\Controllers\ReelsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/explore', [ExploreController::class, 'index'])->name('explore');
+Route::get('/reels', [ReelsController::class, 'index'])->name('reels');
 
 Auth::routes();
 
