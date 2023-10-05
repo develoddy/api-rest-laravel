@@ -21,7 +21,9 @@
                                         <a href="" class="fw-bold text-black text-decoration-none">username</a>
                                     </div>
                                     <div class="p-2 flex-grow-1">
-                                        <a href="" class="fw-bold text-black text-decoration-none px-2">Editar perfil</a>
+                                        <a href="" class="fw-bold text-black text-decoration-none px-2 ">
+                                           <button class="btn pt-0 pb-0 btn-outline-secondary border-0 ">Editar perfil</button> 
+                                        </a>
                                     </div>
                                     <div class="p-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">

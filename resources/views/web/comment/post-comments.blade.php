@@ -7,9 +7,6 @@
 <form method="post" action="" class="profile-form-simple">
     @csrf
     <div class="card mb-3">
-        {{-- <div class="card-header">
-            <p>header</p>
-        </div> --}}
         <div class="card-body">
             <div class="row justify-content-center">
                 <div class="col col-md-6 col-lg-8 col-sm-8">
@@ -42,7 +39,6 @@
                                         description de la publicacion description de la publicacion description de la publicacion description de la publicacion
                                     </p>
                                 </div>
-                                {{-- <div class="d-flex flex-column min-vh-100"> --}}
                                 <div class="" style="height: 100%; overflow-y: auto; position: relative;">
                                     <div class="d-flex flex-column border border-danger" style="width: 100%; height: calc(100% - 32px) !important;">
                                        <div class="d-flex flex-column flex-grow-1">
@@ -59,9 +55,6 @@
                 </div>
             </div>
         </div>
-        {{-- <div class="card-footer border-bottom text-muted">
-            <p>footer</p>
-        </div> --}}
     </div>
 </form>
 

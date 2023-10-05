@@ -6,6 +6,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ExploreController;
 use App\Http\Controllers\ReelsController;
 use App\Http\Controllers\CommentsController;
+use App\Http\Controllers\ChatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/explore', [ExploreController::class, 'index'])->name('explore');
 Route::get('/reels', [ReelsController::class, 'index'])->name('reels');
+Route::get('/chat', [ChatController::class, 'index'])->name('chat');
 
 Route::get('/comments/{id}', [CommentsController::class, 'index'])->name('comments');
 

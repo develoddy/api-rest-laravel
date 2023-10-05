@@ -117,9 +117,9 @@
                     <x-modal-icon type="{{ $type }}"></x-modal-icon>
                 </div>
                @endif
-                <div class="modal-body grow p-6">
+                <div class="modal-body grow p-0">
                     <h1 class="text-2xl font-medium text-gray-800 dark:text-slate-300 modal-title text-left">{{ $title }}</h1>
-                    <div class="modal-text text-gray-600 dark:text-gray-400 pt-2 text-base leading-6 tracking-wide text-left">
+                    <div class="modal-text text-gray-600 dark:text-gray-400 pt-0 text-base leading-6 tracking-wide text-left">
                         {{ $slot }}
                     </div>
                 </div>
