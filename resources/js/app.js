@@ -1,7 +1,9 @@
 
 import './bootstrap';
+import './carousel';
 
 //import $ from 'jquery';
 //window.$ = window.jQuery = $;
 
-import * as bootstrap from 'bootstrap';
+// Cualquier .js de funcionalidad se tiene que agregar aqui.
+// import "./script"

@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="col col-md-10 col-sm-12 col-xl-12 col-lg-12">
                 <div class="card border-0">
-                    <div class="card-header">
+                    <div class="card-header d-none">
                         @if (session('status'))
                             <div class="alert alert-success" role="alert">
                                 {{ session('status') }}
@@ -100,9 +100,27 @@
 
                         <div class="d-flex">
                             <div class="p-2">
-                                item1
+                                <div>
+                                    <x-avatar
+                                        image="{{ Vite::asset('resources/images/users/doc.png') }}"
+                                        stacked="true" 
+                                        size="small" />
+                                    <x-avatar
+                                        image="{{ Vite::asset('resources/images/users/francis.png') }}"
+                                        stacked="true" 
+                                        size="small" />
+                                    <x-avatar
+                                        image="{{ Vite::asset('resources/images/users/issah.jpg') }}"
+                                        stacked="true" 
+                                        size="small" />
+                                    <x-avatar
+                                        image="{{ Vite::asset('resources/images/users/rowe.jpeg') }}"
+                                        stacked="true" 
+                                        size="small" />
+
+                                </div>
                             </div>
-                            <div class="p-2">
+                            <div class="p-4 mr-3 pt-3">
                                 <a href="" class="fw-bold text-black">1.105.293 Me gusta</a>
                             </div>
                         </div>

@@ -26,7 +26,7 @@
     $dot_placement = (in_array($dot_placement, ['top','bottom'])) ? $dot_placement : 'bottom';
     $image_size = $sizes[$size]['size_css'];
     $dot_position_css = $sizes[$size]['dot_css'];
-    $stacked_css = ($stacked) ? 'mb-5 !-mr-5' : '';
+    $stacked_css = ($stacked) ? 'mb-0 !-mr-5' : '';
 @endphp
 
 <span class="top-0 bottom-0 hidden"></span>
