@@ -25,6 +25,14 @@ class ProfileController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     */
+    public function profileEdit()
+    {
+        return view('web.profile.profile-edit');
+    }
+
+    /**
      * Show the form for creating a new resource.
      */
     public function create()

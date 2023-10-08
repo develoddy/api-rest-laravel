@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-
 @section('title', 'Profile')
 
 @section('content')
@@ -21,8 +20,8 @@
                                         <a href="" class="fw-bold text-black text-decoration-none">username</a>
                                     </div>
                                     <div class="p-2 flex-grow-1">
-                                        <a href="" class="fw-bold text-black text-decoration-none px-2 ">
-                                           <button class="btn pt-0 pb-0 btn-outline-secondary border-0 ">Editar perfil</button> 
+                                        <a href="{{ route('profileEdit') }}" class="fw-bold text-black text-decoration-none px-2 ">
+                                           <button class="btn pt-0 pb-0 btn-secondary border-0 ">Editar perfil</button> 
                                         </a>
                                     </div>
                                     <div class="p-2">
@@ -40,7 +39,7 @@
                                     <div class="p-2"><a href="" class="text-black text-decoration-none fw-bold">20 Seguidos</a></div>
                                 </div>
                             </div>
-                            <div class="p-2"><a href="" class="text-black text-decoration-none fw-bold">username</a></div>
+                            <div class="p-2"><a href="" class="text-black text-decoration-none fw-bold">last name</a></div>
                             <div class="p-2 lh-1">
                                 <p class="mb-1">🧑🏻‍💻App developer</p>
                                 <p class="mb-1">📲 android, iOS y web</p>
@@ -68,71 +67,22 @@
         <div class="row mt-3 justify-content-center">
             <div class="col col-md-8 col-sm-12">
                 <div class="d-flex flex-row  justify-content-center">
-                    <div class="p-2"><a href="" class="text-uppercase text-secondary text-decoration-none fw-bold px-2">Publicaciones</a></div>
-                    <div class="p-2"><a href="" class="text-uppercase text-secondary text-decoration-none fw-bold px-2">Reels</a></div>
-                    <div class="p-2"><a href="" class="text-uppercase text-secondary text-decoration-none fw-bold px-2">Etiquetas</a></div>
+                    <div class="p-2">
+                        <a href="{{ route('profilePosts') }}" class="text-uppercase text-secondary text-decoration-none fw-bold px-2">Publicaciones</a>
+                    </div>
+                    <div class="p-2">
+                        <a href="{{ route('profileReels') }}" class="text-uppercase text-secondary text-decoration-none fw-bold px-2">Reels</a>
+                    </div>
+                    <div class="p-2">
+                        <a href="" class="text-uppercase text-secondary text-decoration-none fw-bold px-2">Etiquetas</a>
+                    </div>
                 </div>
-                
             </div>
         </div>
 
-        {{-- Grid de las fotos del perfil --}}
-        <div class="row mt-2 mb-0 justify-content-center">
-            <div class="col col-md-10 col-lg-8 col-sm-12 col-xl-8 p-0">
-                <div class="row">
-                    <div class="col-4 p-0">
-                        <div class="element d-flex h-100 flex-column justify-content-between">
-                            <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
-                                {{-- <span>&nbsp;</span> --}}
-                                <img class="img-fluid img-thumbnail border-0 rounded-0" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-                                {{-- <p>Some text</p> --}}
-                            </div>
-                            {{-- <a href>Link</a> --}}
-                        </div>
-                    </div>
-                    <div class="col-4 p-0">
-                        <div class="element d-flex h-100 flex-column justify-content-between">
-                            <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
-                                {{-- <span>&nbsp;</span> --}}
-                                <img class="img-fluid img-thumbnail border-0 rounded-0" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-                                {{-- <p>Some text</p> --}}
-                            </div>
-                            {{-- <a href class="align-self-end w-100">Link</a> --}}
-                        </div>
-                    </div>
-                    <div class="col-4 p-0">
-                        <div class="element d-flex h-100 flex-column justify-content-between">
-                            <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
-                                {{-- <span>&nbsp;</span> --}}
-                                <img class="img-fluid img-thumbnail border-0 rounded-0" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-                                {{-- <p>Some text</p> --}}
-                            </div>
-                            {{-- <a href class="align-self-end w-100">Link</a> --}}
-                        </div>
-                        
-                    </div>
-                    <div class="col-4 align-items-center p-0">
-                        <div class="element d-flex h-100 flex-column justify-content-between">
-                            <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
-                                {{-- <span>&nbsp;</span> --}}
-                                <img class="img-fluid img-thumbnail border-0 rounded-0" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-                                {{-- <p>Some text</p> --}}
-                            </div>
-                            {{-- <a href class="align-self-end w-100">Link</a> --}}
-                        </div>
-                    </div>
-                    <div class="col-4 align-items-center p-0">
-                        <div class="element d-flex h-100 flex-column justify-content-between">
-                            <div class="inner d-flex h-100 flex-column align-items-center justify-content-center">
-                                {{-- <span>&nbsp;</span> --}}
-                                <img class="img-fluid img-thumbnail border-0 rounded-0" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-                                {{-- <p>Some text</p> --}}
-                            </div>
-                            {{-- <a href class="align-self-end w-100">Link</a> --}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
+        <main role="main" class="container">
+            @yield('content-profile')
+        </main>
     </div>
 @endsection
