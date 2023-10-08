@@ -15,6 +15,11 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    <!-- Scripts public vendor -->
+    <link href="{{ asset('vendor/bladewind/css/animate.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('vendor/bladewind/css/bladewind-ui.min.css') }}" rel="stylesheet" />
+    <script src="{{ asset('vendor/bladewind/js/helpers.js') }}" type="text/javascript"></script>
 </head>
 <body>
     <div id="app">
@@ -50,6 +55,9 @@
                             @endif
                         @else
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('chat') }}">{{ __('Chat') }}</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('reels') }}">{{ __('Reels') }}</a>
                             </li>
                             <li class="nav-item">
@@ -64,7 +72,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('profile') }}">
+                                    <a class="dropdown-item" href="{{ route('profilePosts') }}">
                                         {{ __('Perfil') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
